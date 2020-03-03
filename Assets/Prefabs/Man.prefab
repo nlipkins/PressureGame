@@ -3369,6 +3369,7 @@ GameObject:
   - component: {fileID: 2709454916104354435}
   - component: {fileID: 2709454916104354436}
   - component: {fileID: 2709454916104354433}
+  - component: {fileID: 9105820456950587730}
   m_Layer: 0
   m_Name: Man
   m_TagString: Untagged
@@ -3450,8 +3451,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c2d0071b47bcea43a38f41ec1139548, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpHeight: 1
+  jumpHeight: 6
   gravityModiifer: 1
+--- !u!95 &9105820456950587730
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6613454215919093185}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: cb71e0b181fbc8c4a9a3e9f45f8448f3, type: 3}
+  m_Controller: {fileID: 9100000, guid: 1de385df2ff713a41adfcbbb63b8af91, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6613454215919093189
 GameObject:
   m_ObjectHideFlags: 0
