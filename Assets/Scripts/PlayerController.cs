@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     public float jumpHeight;
     //public float movementSpeed;
     public float gravityModiifer;
+    public bool isOnGround = true;
 
     // Start is called before the first frame update
     void Start()
@@ -25,15 +26,26 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         //allowing the space bar to used to allow the player to jump
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && isOnGround)
         {
             playerRb.AddForce(Vector3.up * jumpHeight, ForceMode.Impulse);
             playerAni.SetTrigger("Jump_Trig");
+            isOnGround = false;
         }
 
-        if (Input.GetKeyDown(KeyCode.UpArrow))
+        if (Input.GetKey("left"))
         {
            transform.Translate(Input.GetAxis("Horizontal"), 0, 0);
         }
+
+        if (Input.GetKey("right"))
+        {
+            transform.Translate(Input.GetAxis("Horizontal"), 0, 0);
+        }
     }
+
+    private void OnCollisionEnter (Collision collision)
+    {
+        isOnGround = true;
+    }   
 }

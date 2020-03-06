@@ -1355,7 +1355,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1517001766}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.064291, y: -0.27, z: -1.0584135}
+  m_LocalPosition: {x: -8.064291, y: -0.3, z: -1.0584135}
   m_LocalScale: {x: 6.0743, y: 6.0743, z: 6.0743}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1647,6 +1647,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 1517465622098962321, guid: bad60f303b9960741a0f89b12ada1cef,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bad60f303b9960741a0f89b12ada1cef, type: 3}
 --- !u!1001 &2709454916403635344
@@ -1656,10 +1661,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2709454916104354433, guid: 84b456ffc9d7db646b1376dd2cfa6cb9,
+        type: 3}
+      propertyPath: movementSpeed
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2709454916104354433, guid: 84b456ffc9d7db646b1376dd2cfa6cb9,
+        type: 3}
+      propertyPath: jumpHeight
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 2709454916104354433, guid: 84b456ffc9d7db646b1376dd2cfa6cb9,
+        type: 3}
+      propertyPath: gravityModiifer
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2709454916104354435, guid: 84b456ffc9d7db646b1376dd2cfa6cb9,
         type: 3}
       propertyPath: m_IsKinematic
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2709454916104354435, guid: 84b456ffc9d7db646b1376dd2cfa6cb9,
+        type: 3}
+      propertyPath: m_Mass
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 6613454215919093185, guid: 84b456ffc9d7db646b1376dd2cfa6cb9,
         type: 3}
@@ -1726,6 +1751,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9105820456950587730, guid: 84b456ffc9d7db646b1376dd2cfa6cb9,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: eb79e3fd0dd669f40a90a984b92a0ccf, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84b456ffc9d7db646b1376dd2cfa6cb9, type: 3}
 --- !u!1 &9105820456950587729 stripped
