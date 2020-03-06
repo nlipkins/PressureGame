@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MoveRight : MonoBehaviour
 {
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +14,5 @@ public class MoveRight : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
     }
 }
