@@ -7,11 +7,12 @@ public class PlayerController : MonoBehaviour
     private Rigidbody playerRb;
     private Animator playerAni;
 
-    public float movementSpeed;
+    //public float movementSpeed;
     public float jumpHeight;
     //public float movementSpeed;
     public float gravityModiifer;
     public bool isOnGround = true;
+    public bool gameOver = true;
 
     // Start is called before the first frame update
     void Start()

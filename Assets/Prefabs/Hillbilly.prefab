@@ -246,9 +246,10 @@ GameObject:
   - component: {fileID: 4144257328096967832}
   - component: {fileID: 8122650929477845370}
   - component: {fileID: 3200764031152405112}
+  - component: {fileID: 5987132917700738917}
   m_Layer: 0
   m_Name: Hillbilly
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -330,6 +331,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 191.69817, y: 147.008, z: 427.162}
   m_Center: {x: 61.89089, y: 91.518, z: -11.552}
+--- !u!114 &5987132917700738917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6726490041165657833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80b1e92fc4a27c5448c9510e55e373bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
 --- !u!1 &8850432690437502709
 GameObject:
   m_ObjectHideFlags: 0

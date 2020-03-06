@@ -90,9 +90,10 @@ GameObject:
   - component: {fileID: 8398257213122987932}
   - component: {fileID: 2201009907549151956}
   - component: {fileID: 6416019712102585707}
+  - component: {fileID: 3851991862672256405}
   m_Layer: 0
   m_Name: Vehicle
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -174,6 +175,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 219.5212, y: 148.722, z: 508.41296}
   m_Center: {x: -7.083264, y: 84.21599, z: 1.5064878}
+--- !u!114 &3851991862672256405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5193756447722409350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80b1e92fc4a27c5448c9510e55e373bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 30
 --- !u!1 &7493140503591251186
 GameObject:
   m_ObjectHideFlags: 0
