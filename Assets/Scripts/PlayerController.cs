@@ -7,10 +7,10 @@ public class PlayerController : MonoBehaviour
     private Rigidbody playerRb;
     private Animator playerAni;
 
-    //public float movementSpeed;
+    public float movementSpeed;
     public float jumpHeight;
-    //public float movementSpeed;
     public float gravityModiifer;
+
     public bool isOnGround = true;
     public bool gameOver = true;
 
@@ -36,12 +36,12 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKey("left"))
         {
-           transform.Translate(Input.GetAxis("Horizontal"), 0, 0);
+            transform.Translate(Vector3.left * Time.deltaTime * movementSpeed);
         }
 
         if (Input.GetKey("right"))
         {
-            transform.Translate(Input.GetAxis("Horizontal"), 0, 0);
+            transform.Translate(Vector3.right * Time.deltaTime * movementSpeed);
         }
     }
 

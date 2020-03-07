@@ -5,14 +5,11 @@ using UnityEngine;
 public class SpawnManager : MonoBehaviour
 {
     public GameObject[] obstaclePrefab;
-    private float spawnRangeX = 45;
-    //private float spawnPosZ = 20;
-    //private PlayerController playerControllerScript;
+
     // Start is called before the first frame update
     void Start()
     {
-        //playerControllerScript = GameObject.Find("Player").GetComponent<PlayerController>();
-        InvokeRepeating("SpawnCar", 2, 2.5f);
+        InvokeRepeating("SpawnVehicle", 2, 2.5f);
     }
 
     // Update is called once per frame
@@ -21,7 +18,7 @@ public class SpawnManager : MonoBehaviour
         
     }
 
-    void SpawnCar()
+    void SpawnVehicle()
     {
         int carIndex = Random.Range(0, obstaclePrefab.Length);
         Vector3 spawnPos = new Vector3(30, 0, 0);
