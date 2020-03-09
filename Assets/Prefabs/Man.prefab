@@ -3455,6 +3455,7 @@ MonoBehaviour:
   jumpHeight: 6
   gravityModiifer: 1
   isOnGround: 1
+  gameOver: 0
 --- !u!95 &9105820456950587730
 Animator:
   serializedVersion: 3
