@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody playerRb;
     private Animator playerAni;
 
-    public float zBoundRange = 4f;
+    //private float zBoundRange = 4f;
     public float movementSpeed;
     public float jumpHeight;
     public float gravityModiifer;
@@ -55,14 +55,14 @@ public class PlayerController : MonoBehaviour
 
     private void StayInbounds()
     {
-        if (transform.position.z < -zBoundRange)
+        if (transform.position.z < -4)
         {
-            transform.position = new Vector3(transform.position.x, transform.position.y, -zBoundRange);
+            transform.position = new Vector3(transform.position.x, transform.position.y, -4);
         }
 
-        if (transform.position.z > zBoundRange)
+        if (transform.position.z > 1)
         {
-            transform.position = new Vector3(transform.position.x, transform.position.y, zBoundRange);
+            transform.position = new Vector3(transform.position.x, transform.position.y, 1);
         }
     }
 

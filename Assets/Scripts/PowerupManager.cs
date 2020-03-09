@@ -13,13 +13,14 @@ public class PowerupManager : MonoBehaviour
 
     public bool hasPowerup;
     public bool canDoubleJump = true;
+    public bool isGrounded;
 
     // Start is called before the first frame update
     void Start()
     {
         playerCon = GetComponent<PlayerController>();
 
-        InvokeRepeating("SpawnPowerup", 10, 25);
+        InvokeRepeating("SpawnPowerup", 10, 35);
     }
 
     // Update is called once per frame
