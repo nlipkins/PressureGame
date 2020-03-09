@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody playerRb;
     private Animator playerAni;
 
+    public float zBoundRange = 4f;
     public float movementSpeed;
     public float jumpHeight;
     public float gravityModiifer;
@@ -43,10 +44,26 @@ public class PlayerController : MonoBehaviour
         {
             transform.Translate(Vector3.right * Time.deltaTime * movementSpeed);
         }
+
+        StayInbounds();
     }
 
     private void OnCollisionEnter (Collision collision)
     {
         isOnGround = true;
     }
+
+    private void StayInbounds()
+    {
+        if (transform.position.z < -zBoundRange)
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y, -zBoundRange);
+        }
+
+        if (transform.position.z > zBoundRange)
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y, zBoundRange);
+        }
+    }
+
 }

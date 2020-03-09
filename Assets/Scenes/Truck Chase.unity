@@ -1853,55 +1853,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1562358102
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1562358104}
-  - component: {fileID: 1562358103}
-  m_Layer: 0
-  m_Name: Powerups
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1562358103
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1562358102}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1dd15dc5d8d6334f883b3fb7a22c0af, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  powerupObject: {fileID: 4553577598202053722, guid: be2cfb0524a16594ea0ceb1bc82fb3b9,
-    type: 3}
-  powerupIndicator: {fileID: 3976170033043482236, guid: 80e50a40677479a439d2d8d2d6e6a341,
-    type: 3}
-  hasPowerup: 0
-  canDoubleJump: 1
---- !u!4 &1562358104
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1562358102}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.4410276, y: 4.849315, z: -4.440627}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1710455412
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2400,7 +2351,7 @@ PrefabInstance:
     - target: {fileID: 2709454916104354435, guid: 84b456ffc9d7db646b1376dd2cfa6cb9,
         type: 3}
       propertyPath: m_Constraints
-      value: 120
+      value: 122
       objectReference: {fileID: 0}
     - target: {fileID: 2709454916104354436, guid: 84b456ffc9d7db646b1376dd2cfa6cb9,
         type: 3}
@@ -2485,3 +2436,21 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2709454916403635344}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &9105820456950587735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9105820456950587729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1dd15dc5d8d6334f883b3fb7a22c0af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerupObject: {fileID: 4553577598202053722, guid: be2cfb0524a16594ea0ceb1bc82fb3b9,
+    type: 3}
+  powerupIndicator: {fileID: 3976170033043482236, guid: 80e50a40677479a439d2d8d2d6e6a341,
+    type: 3}
+  hasPowerup: 0
+  canDoubleJump: 1
