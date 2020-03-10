@@ -20,7 +20,7 @@ public class PowerupManager : MonoBehaviour
     {
         playerCon = GetComponent<PlayerController>();
 
-        InvokeRepeating("SpawnPowerup", 10, 35);
+        InvokeRepeating("SpawnPowerup", 20, 35);
     }
 
     // Update is called once per frame
