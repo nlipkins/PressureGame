@@ -8,9 +8,11 @@ public class SpawnManager : MonoBehaviour
     public GameObject[] carPrefab;
     public GameObject[] militaryPrefab;
 
-    //public Vector3 spawnPosition;
-    //public Vector3 spawnPosition2;
-    //public Vector3 spawnPosition3;
+    private PlayerController playerControllerScript;
+
+    public Vector3 spawnPosition;
+    public Vector3 spawnPosition2;
+    public Vector3 spawnPosition3;
 
 
     // Start is called before the first frame update
@@ -21,6 +23,8 @@ public class SpawnManager : MonoBehaviour
         InvokeRepeating("SpawnVehicles", 9.5f, 9.3f);
 
         InvokeRepeating("SpawnMilitary", 30, 8.25f);
+
+        playerControllerScript = GameObject.Find("Player").GetComponent<PlayerController>();
     }
 
     // Update is called once per frame
@@ -32,24 +36,33 @@ public class SpawnManager : MonoBehaviour
     void SpawnBarrels()
     {
         int obstacleIndex = Random.Range(0, barrelPrefab.Length);
-        Vector3 spawnPosition = new Vector3(30, 0, -1.5f);
+        spawnPosition = new Vector3(30, 0, -1.5f);
 
-        Instantiate(barrelPrefab[obstacleIndex], spawnPosition, barrelPrefab[obstacleIndex].transform.rotation);
+        if (playerControllerScript.gameOver == false)
+        {
+            Instantiate(barrelPrefab[obstacleIndex], spawnPosition, barrelPrefab[obstacleIndex].transform.rotation);
+        }
     }
 
     void SpawnVehicles()
     {
         int carIndex = Random.Range(0, carPrefab.Length);
-        Vector3 spawnPosition2 = new Vector3(30, 0, -1.5f);
+        spawnPosition2 = new Vector3(30, 0, -1.5f);
 
-        Instantiate(carPrefab[carIndex], spawnPosition2, carPrefab[carIndex].transform.rotation);
+        if (playerControllerScript.gameOver == false)
+        {
+            Instantiate(carPrefab[carIndex], spawnPosition2, carPrefab[carIndex].transform.rotation);
+        }
     }
 
     void SpawnMilitary()
     {
         int militaryIndex = Random.Range(0, militaryPrefab.Length);
-        Vector3 spawnPosition3 = new Vector3(30, 0, -1.5f);
+        spawnPosition3 = new Vector3(30, 0, -1.5f);
 
-        Instantiate(militaryPrefab[militaryIndex], spawnPosition3, militaryPrefab[militaryIndex].transform.rotation);
+        if (playerControllerScript.gameOver == false)
+        {
+            Instantiate(militaryPrefab[militaryIndex], spawnPosition3, militaryPrefab[militaryIndex].transform.rotation);
+        }
     }
 }
