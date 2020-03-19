@@ -880,12 +880,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45e8ae1b29d49b346bab239642aac46c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstaclePrefab:
-  - {fileID: 6726490041165657833, guid: 317633292533cf34abecb8afe2dc5095, type: 3}
-  - {fileID: 5193756447722409350, guid: 7f829d545683b1340947f416c154456d, type: 3}
-  - {fileID: 1740334328089649927, guid: 47984e864f1aeb24f8138ce107f0b9dd, type: 3}
+  barrelPrefab:
   - {fileID: 6376988229021422157, guid: 3c4be636555643045a6af743092fa58f, type: 3}
   - {fileID: 5152942697981838357, guid: e7bf516a177b44b408a9c247b513acd3, type: 3}
+  carPrefab:
+  - {fileID: 5193756447722409350, guid: 7f829d545683b1340947f416c154456d, type: 3}
+  - {fileID: 6726490041165657833, guid: 317633292533cf34abecb8afe2dc5095, type: 3}
+  militaryPrefab:
+  - {fileID: 1740334328089649927, guid: 47984e864f1aeb24f8138ce107f0b9dd, type: 3}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -2323,7 +2325,7 @@ PrefabInstance:
     - target: {fileID: 2709454916104354433, guid: 84b456ffc9d7db646b1376dd2cfa6cb9,
         type: 3}
       propertyPath: jumpHeight
-      value: 461.5
+      value: 475
       objectReference: {fileID: 0}
     - target: {fileID: 2709454916104354433, guid: 84b456ffc9d7db646b1376dd2cfa6cb9,
         type: 3}
