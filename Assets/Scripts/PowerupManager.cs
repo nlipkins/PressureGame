@@ -18,6 +18,7 @@ public class PowerupManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        playerRb = GetComponent<Rigidbody>();
         playerCon = GetComponent<PlayerController>();
 
         InvokeRepeating("SpawnPowerup", 20, 35);
