@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     private Rigidbody playerRb;
     private Animator playerAni;
+    public AudioClip jumpSound;
 
     //private float zBoundRange = 4f;
     public float movementSpeed;
