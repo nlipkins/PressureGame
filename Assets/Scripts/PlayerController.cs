@@ -59,6 +59,8 @@ public class PlayerController : MonoBehaviour
         {
             gameOver = true;
             Debug.Log("Game Over!");
+            playerAni.SetBool("Death_b", true);
+            playerAni.SetInteger("DeathInteger_int", 1);
         }
     }
 
