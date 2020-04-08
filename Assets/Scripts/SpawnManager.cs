@@ -10,9 +10,9 @@ public class SpawnManager : MonoBehaviour
 
     private PlayerController playerControllerScript;
 
-    public Vector3 spawnPosition;
-    public Vector3 spawnPosition2;
-    public Vector3 spawnPosition3;
+    private Vector3 spawnPosition;
+    private Vector3 spawnPosition2;
+    private Vector3 spawnPosition3;
 
 
     // Start is called before the first frame update
