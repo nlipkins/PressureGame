@@ -881,16 +881,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   barrelPrefab:
-  - {fileID: 6376988229021422157, guid: 3c4be636555643045a6af743092fa58f, type: 3}
-  - {fileID: 5152942697981838357, guid: e7bf516a177b44b408a9c247b513acd3, type: 3}
+  - {fileID: 7556110986767868604, guid: b8482e424f8307f458b589620bc66450, type: 3}
+  - {fileID: 2849986250772246844, guid: 6cdc98b32d97b2746bd8ae093afa4f4a, type: 3}
   carPrefab:
-  - {fileID: 6726490041165657833, guid: 317633292533cf34abecb8afe2dc5095, type: 3}
-  - {fileID: 5193756447722409350, guid: 7f829d545683b1340947f416c154456d, type: 3}
+  - {fileID: 1039041537112898, guid: 20d6170d440e52b438267a860798bb0a, type: 3}
   militaryPrefab:
-  - {fileID: 1740334328089649927, guid: 47984e864f1aeb24f8138ce107f0b9dd, type: 3}
-  spawnPosition: {x: 0, y: 0, z: 0}
-  spawnPosition2: {x: 0, y: 0, z: 0}
-  spawnPosition3: {x: 0, y: 0, z: 0}
+  - {fileID: 6422504695546043903, guid: 47984e864f1aeb24f8138ce107f0b9dd, type: 3}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -2457,7 +2453,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   powerupObject: {fileID: 4553577598202053722, guid: be2cfb0524a16594ea0ceb1bc82fb3b9,
     type: 3}
-  powerupIndicator: {fileID: 3976170033043482236, guid: 80e50a40677479a439d2d8d2d6e6a341,
+  powerupIndicator: {fileID: 1758629138285362, guid: 11a653b9169986c4f9436a3002fb4516,
     type: 3}
   hasPowerup: 0
   canDoubleJump: 1
