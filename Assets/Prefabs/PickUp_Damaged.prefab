@@ -89,6 +89,7 @@ GameObject:
   - component: {fileID: 4888556755690502}
   - component: {fileID: 3844031551293395805}
   - component: {fileID: -7610116817753801606}
+  - component: {fileID: 7131965024287958164}
   m_Layer: 0
   m_Name: PickUp_Damaged
   m_TagString: Obstacle
@@ -179,6 +180,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &7131965024287958164
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1039041537112898}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.671138, y: 1.3233039, z: 6.164071}
+  m_Center: {x: 0.112097144, y: 0.41507757, z: 0.352378}
 --- !u!1 &1052111476793010
 GameObject:
   m_ObjectHideFlags: 0

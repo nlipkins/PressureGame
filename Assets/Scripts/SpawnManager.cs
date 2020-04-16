@@ -11,8 +11,11 @@ public class SpawnManager : MonoBehaviour
     private PlayerController playerControllerScript;
 
     private Vector3 spawnPosition;
-    private Vector3 spawnPosition2;
-    private Vector3 spawnPosition3;
+
+
+    private float spawnPosZ1 = 4.15f;
+    private float spawnPosZ2 = 0.8f;
+    private float spawnPosX = 20;
 
 
     // Start is called before the first frame update
@@ -36,7 +39,7 @@ public class SpawnManager : MonoBehaviour
     void SpawnBarrels()
     {
         int obstacleIndex = Random.Range(0, barrelPrefab.Length);
-        spawnPosition = new Vector3(30, 0, -1.5f);
+        spawnPosition = new Vector3(spawnPosX, 0, Random.Range(-spawnPosZ1, spawnPosZ2));
 
         if (playerControllerScript.gameOver == false)
         {
@@ -47,22 +50,22 @@ public class SpawnManager : MonoBehaviour
     void SpawnVehicles()
     {
         int carIndex = Random.Range(0, carPrefab.Length);
-        spawnPosition2 = new Vector3(30, 0, -1.5f);
+        spawnPosition = new Vector3(spawnPosX, 0, Random.Range(-spawnPosZ1, spawnPosZ2));
 
         if (playerControllerScript.gameOver == false)
         {
-            Instantiate(carPrefab[carIndex], spawnPosition2, carPrefab[carIndex].transform.rotation);
+            Instantiate(carPrefab[carIndex], spawnPosition, carPrefab[carIndex].transform.rotation);
         }
     }
 
     void SpawnMilitary()
     {
         int militaryIndex = Random.Range(0, militaryPrefab.Length);
-        spawnPosition3 = new Vector3(30, 0, -1.5f);
+        spawnPosition = new Vector3(spawnPosX, 0, Random.Range(-spawnPosZ1, spawnPosZ2));
 
         if (playerControllerScript.gameOver == false)
         {
-            Instantiate(militaryPrefab[militaryIndex], spawnPosition3, militaryPrefab[militaryIndex].transform.rotation);
+            Instantiate(militaryPrefab[militaryIndex], spawnPosition, militaryPrefab[militaryIndex].transform.rotation);
         }
     }
 }
