@@ -5,7 +5,7 @@ using UnityEngine;
 public class FollowPlayer : MonoBehaviour
 {
     public GameObject Player;
-    private Vector3 camPos = new Vector3(2.8f, 11, -7);
+    private Vector3 camPos = new Vector3(-0.96f, 7.39f, -10.76f);
     // Start is called before the first frame update
     void Start()
     {

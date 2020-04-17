@@ -32,7 +32,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && isOnGround)
         {
             playerRb.AddForce(Vector3.up * jumpHeight, ForceMode.Impulse);
-            playerAni.SetTrigger("Jump_Trig");
+            playerAni.SetTrigger("Jump_trig");
             isOnGround = false;
         }
 
@@ -61,7 +61,7 @@ public class PlayerController : MonoBehaviour
             gameOver = true;
             Debug.Log("Game Over!");
             playerAni.SetBool("Death_b", true);
-            playerAni.SetInteger("DeathInteger_int", 1);
+            playerAni.SetInteger("DeathType_int", 1);
         }
     }
 

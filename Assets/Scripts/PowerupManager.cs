@@ -6,13 +6,15 @@ public class PowerupManager : MonoBehaviour
 {
     [SerializeField] GameObject powerupObject;
     [SerializeField] GameObject powerupIndicator;
-    private int numberOfJumps;
+
+    private const int numberOfJumps = 2;
+    private int currentJump = 0;
 
     private Rigidbody playerRb;
     private PlayerController playerCon;
 
     public bool hasPowerup;
-    public bool canDoubleJump = true;
+    //public bool canDoubleJump = true;
     public bool isGrounded;
 
     // Start is called before the first frame update
@@ -32,21 +34,16 @@ public class PowerupManager : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Powerup") && hasPowerup)
+        if (collision.gameObject.CompareTag("Powerup") && hasPowerup == true)
         {
-            if (Input.GetKeyDown(KeyCode.Space) && canDoubleJump)
+            if (Input.GetKeyDown(KeyCode.Space) && (isGrounded || numberOfJumps > currentJump))
             {
-                float jumpVelocity = 100f;
-                playerRb.velocity = Vector3.up * jumpVelocity;
+                playerRb.AddForce(Vector3.up * playerCon.jumpHeight, ForceMode.Impulse);
+                isGrounded = false;
+                currentJump++;
             }
 
-            else
-            {
-                float jumpVelocity = 100f;
-                playerRb.velocity = Vector3.up * jumpVelocity;
-                canDoubleJump = false;
-            }
-
+            currentJump = 0;
 
             Debug.Log("Player has collected the " + collision.gameObject + " and enabled the double jump!");
         }
