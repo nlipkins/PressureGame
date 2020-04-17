@@ -103,8 +103,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6348409353590077700}
   - component: {fileID: -1840207049575248066}
-  - component: {fileID: 6467902884988051375}
   - component: {fileID: -594012097498548744}
+  - component: {fileID: 29236351450012032}
   m_Layer: 0
   m_Name: Street
   m_TagString: Street
@@ -140,18 +140,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5.720974, y: 0.53959966, z: 3.6225128}
   m_Center: {x: -0.07081938, y: 0.038828015, z: 0.11072096}
---- !u!114 &6467902884988051375
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6345458067745234532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb49e68d9efd17d41b63c6fb444f750f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &-594012097498548744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,5 +150,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 80b1e92fc4a27c5448c9510e55e373bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &29236351450012032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6345458067745234532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb49e68d9efd17d41b63c6fb444f750f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

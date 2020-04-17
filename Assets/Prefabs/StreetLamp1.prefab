@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6026840408391620361}
   - component: {fileID: 6031247809002135407}
-  - component: {fileID: 6031247809002135404}
   - component: {fileID: 124953767896255872}
+  - component: {fileID: -407611022004505619}
   m_Layer: 0
   m_Name: StreetLamp1
   m_TagString: Untagged
@@ -41,21 +41,9 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6032211941223365897}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 80b1e92fc4a27c5448c9510e55e373bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &6031247809002135404
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6032211941223365897}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb49e68d9efd17d41b63c6fb444f750f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!65 &124953767896255872
@@ -71,6 +59,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-407611022004505619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6032211941223365897}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27871d7c21fb868468ef0a97ebbfcb1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6032340316605340365
 GameObject:
   m_ObjectHideFlags: 0

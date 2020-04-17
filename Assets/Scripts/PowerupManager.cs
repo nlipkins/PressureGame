@@ -14,7 +14,6 @@ public class PowerupManager : MonoBehaviour
     private PlayerController playerCon;
 
     public bool hasPowerup;
-    //public bool canDoubleJump = true;
     public bool isGrounded;
 
     // Start is called before the first frame update
@@ -72,7 +71,7 @@ public class PowerupManager : MonoBehaviour
 
     void SpawnPowerup()
     {
-        Vector3 spawnPos = new Vector3(-6.72f, 3.25f, -1.44f);
+        Vector3 spawnPos = new Vector3(-2.3f, 3.25f, -1.44f);
         Instantiate(powerupObject, spawnPos, powerupObject.transform.rotation);
     }
 }
