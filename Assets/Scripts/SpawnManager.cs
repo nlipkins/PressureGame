@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
 {
+
     public GameObject[] barrelPrefab;
     public GameObject[] carPrefab;
     public GameObject[] militaryPrefab;
@@ -12,10 +13,9 @@ public class SpawnManager : MonoBehaviour
 
     private Vector3 spawnPosition;
 
-
     private float spawnPosZ1 = 4.15f;
     private float spawnPosZ2 = 0.8f;
-    private float spawnPosX = 20;
+    private float spawnPosX = 26;
 
 
     // Start is called before the first frame update

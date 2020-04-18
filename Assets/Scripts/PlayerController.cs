@@ -1,16 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
+
     private Rigidbody playerRb;
     private Animator playerAni;
     public AudioClip jumpSound;
     public AudioClip crashSound;
     private AudioSource playerAudio;
 
-    //private float zBoundRange = 4f;
     public float movementSpeed;
     public float jumpHeight;
     public float gravityModiifer;
@@ -68,7 +69,7 @@ public class PlayerController : MonoBehaviour
             playerAni.SetInteger("DeathType_int", 1);
             playerAudio.PlayOneShot(crashSound, 1.0f);
         }
-    }
+    }   
 
     private void StayInbounds()
     {
