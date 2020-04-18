@@ -7,6 +7,8 @@ public class PlayerController : MonoBehaviour
     private Rigidbody playerRb;
     private Animator playerAni;
     public AudioClip jumpSound;
+    public AudioClip crashSound;
+    private AudioSource playerAudio;
 
     //private float zBoundRange = 4f;
     public float movementSpeed;
@@ -22,6 +24,7 @@ public class PlayerController : MonoBehaviour
         //getting the components so they will be allowed in the code
         playerRb = GetComponent<Rigidbody>();
         playerAni = GetComponent<Animator>();
+        playerAudio = GetComponent<AudioSource>();
         Physics.gravity *= gravityModiifer;
     }
 
@@ -34,6 +37,7 @@ public class PlayerController : MonoBehaviour
             playerRb.AddForce(Vector3.up * jumpHeight, ForceMode.Impulse);
             playerAni.SetTrigger("Jump_trig");
             isOnGround = false;
+            playerAudio.PlayOneShot(jumpSound, 1.0f);
         }
 
         if (Input.GetKey("left"))
@@ -62,6 +66,7 @@ public class PlayerController : MonoBehaviour
             Debug.Log("Game Over!");
             playerAni.SetBool("Death_b", true);
             playerAni.SetInteger("DeathType_int", 1);
+            playerAudio.PlayOneShot(crashSound, 1.0f);
         }
     }
 

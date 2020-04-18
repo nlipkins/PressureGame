@@ -46,7 +46,6 @@ public class PowerupManager : MonoBehaviour
 
             Debug.Log("Player has collected the " + collision.gameObject + " and enabled the double jump!");
         }
-
     }
 
     private void OnTriggerEnter(Collider other)
