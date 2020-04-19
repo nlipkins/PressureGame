@@ -10,23 +10,28 @@ public class Timer : MonoBehaviour
 
     public float gameTimer = 0f;
 
+    public PlayerController pcs;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        pcs = GameObject.Find("Player").GetComponent<PlayerController>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        gameTimer += Time.deltaTime * 300;
+        if (pcs.gameOver == false)
+        {
+            gameTimer += Time.deltaTime * 300;
 
-        int seconds = (int)(gameTimer % 60);
-        int minutes = (int)(gameTimer / 60) % 60;
-        int hours = (int)(gameTimer / 3600) % 24;
+            int seconds = (int)(gameTimer % 60);
+            int minutes = (int)(gameTimer / 60) % 60;
+            int hours = (int)(gameTimer / 3600) % 24;
 
-        string timerString = string.Format("{0:0}:{1:00}:{2:00}", hours, minutes, seconds);
+            string timerString = string.Format("{0:0}:{1:00}:{2:00}", hours, minutes, seconds);
 
-        gameTimerText.text = timerString;
+            gameTimerText.text = timerString;
+        }
     }
 }
