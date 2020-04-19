@@ -1138,7 +1138,7 @@ PrefabInstance:
     - target: {fileID: 2709454916104354433, guid: 84b456ffc9d7db646b1376dd2cfa6cb9,
         type: 3}
       propertyPath: jumpHeight
-      value: 6.6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2709454916104354433, guid: 84b456ffc9d7db646b1376dd2cfa6cb9,
         type: 3}
@@ -1155,6 +1155,11 @@ PrefabInstance:
       propertyPath: crashSound
       value: 
       objectReference: {fileID: 8300000, guid: 913d6445ee8cc4152a9c18da590ee203, type: 3}
+    - target: {fileID: 2709454916104354433, guid: 84b456ffc9d7db646b1376dd2cfa6cb9,
+        type: 3}
+      propertyPath: runSound
+      value: 
+      objectReference: {fileID: 8300000, guid: afc81148cf88b3c48bfbd59d42bdfa91, type: 3}
     - target: {fileID: 2709454916104354435, guid: 84b456ffc9d7db646b1376dd2cfa6cb9,
         type: 3}
       propertyPath: m_Constraints
@@ -2891,7 +2896,7 @@ MonoBehaviour:
   - {fileID: 7556110986767868604, guid: b8482e424f8307f458b589620bc66450, type: 3}
   - {fileID: 2849986250772246844, guid: 6cdc98b32d97b2746bd8ae093afa4f4a, type: 3}
   carPrefab:
-  - {fileID: 1039041537112898, guid: 20d6170d440e52b438267a860798bb0a, type: 3}
+  - {fileID: 973461866829792176, guid: 9f4424496b5f500489cf5813a2f92496, type: 3}
   militaryPrefab:
   - {fileID: 6422504695546043903, guid: 47984e864f1aeb24f8138ce107f0b9dd, type: 3}
 --- !u!4 &699527366 stripped

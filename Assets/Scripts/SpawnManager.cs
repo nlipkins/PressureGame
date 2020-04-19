@@ -21,11 +21,11 @@ public class SpawnManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("SpawnBarrels", 2, 2.25f);
+        InvokeRepeating("SpawnBarrels", 2, 2.7f);
 
-        InvokeRepeating("SpawnVehicles", 9.5f, 9.3f);
+        InvokeRepeating("SpawnVehicles", 10.5f, 9.5f);
 
-        InvokeRepeating("SpawnMilitary", 30, 8.25f);
+        InvokeRepeating("SpawnMilitary", 35, 11.275f);
 
         playerControllerScript = GameObject.Find("Player").GetComponent<PlayerController>();
     }
