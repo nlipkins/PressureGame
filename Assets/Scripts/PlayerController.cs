@@ -52,7 +52,7 @@ public class PlayerController : MonoBehaviour
             transform.Translate(Vector3.right * Time.deltaTime * movementSpeed);
         }
 
-        playerAudio.PlayOneShot(runSound, 1.0f);
+        //playerAudio.PlayOneShot(runSound, 1.0f);
         StayInbounds();
     }
 
