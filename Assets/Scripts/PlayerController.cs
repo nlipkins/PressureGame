@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     private Animator playerAni;
     public AudioClip jumpSound;
     public AudioClip crashSound;
+    public AudioClip runSound;
     private AudioSource playerAudio;
 
     public float movementSpeed;
@@ -51,6 +52,7 @@ public class PlayerController : MonoBehaviour
             transform.Translate(Vector3.right * Time.deltaTime * movementSpeed);
         }
 
+        //playerAudio.Play(runSound, 1.0f);
         StayInbounds();
     }
 
