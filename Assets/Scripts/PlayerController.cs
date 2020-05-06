@@ -42,14 +42,14 @@ public class PlayerController : MonoBehaviour
             playerAudio.PlayOneShot(jumpSound, 1.0f);
         }
 
-        if (Input.GetKey("left"))
+        if (Input.GetKey("up"))
         {
-            transform.Translate(Vector3.left * Time.deltaTime * movementSpeed);
+            transform.Translate(Vector3.up * Time.deltaTime * movementSpeed);
         }
 
-        if (Input.GetKey("right"))
+        if (Input.GetKey("down"))
         {
-            transform.Translate(Vector3.right * Time.deltaTime * movementSpeed);
+            transform.Translate(Vector3.down * Time.deltaTime * movementSpeed);
         }
 
         //playerAudio.PlayOneShot(runSound, 1.0f);
