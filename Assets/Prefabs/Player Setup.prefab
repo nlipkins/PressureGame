@@ -312,6 +312,7 @@ GameObject:
   - component: {fileID: 9037795228811930026}
   - component: {fileID: 8084362973180474340}
   - component: {fileID: 818925888278709113}
+  - component: {fileID: 6754481156746582053}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Truck
@@ -413,6 +414,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.239786, y: 2.9748473, z: 6.281734}
   m_Center: {x: -0.00000011920929, y: 0, z: 0.23235035}
+--- !u!114 &6754481156746582053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287998040619355450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9b8d8ffbe3e7e14280335de3466b7e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  nextSceneName: 
 --- !u!1 &290537345007145690
 GameObject:
   m_ObjectHideFlags: 0
@@ -455,7 +470,7 @@ GameObject:
   - component: {fileID: 2144118986494276445}
   m_Layer: 0
   m_Name: Next Level
-  m_TagString: Untagged
+  m_TagString: Next Level
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5007,6 +5022,7 @@ GameObject:
   - component: {fileID: 579729386377818341}
   - component: {fileID: 8652470928289248514}
   - component: {fileID: 8652470928289248525}
+  - component: {fileID: 966980359010343568}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -5244,6 +5260,20 @@ MonoBehaviour:
   gameTimerText: {fileID: 0}
   gameTimer: 0
   pcs: {fileID: 0}
+--- !u!114 &966980359010343568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8652470928289248515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9b8d8ffbe3e7e14280335de3466b7e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  nextSceneName: 
 --- !u!1 &8652470928406941723
 GameObject:
   m_ObjectHideFlags: 0
