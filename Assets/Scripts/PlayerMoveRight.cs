@@ -7,6 +7,7 @@ public class PlayerMoveRight : MonoBehaviour
 {
 
     public float speed = 10;
+    [SerializeField] private string nextSceneName;
     private PlayerController playerControllerScript;
 
     // Start is called before the first frame update
@@ -20,7 +21,7 @@ public class PlayerMoveRight : MonoBehaviour
     {
         if (playerControllerScript.gameOver == false)
         {
-            transform.Translate(Vector3.right * Time.deltaTime * speed);
+            transform.Translate(Vector3.forward * Time.deltaTime * speed);
         }
     }
 
@@ -28,7 +29,7 @@ public class PlayerMoveRight : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Next Level"))
         {
-
+            SceneManager.LoadScene(nextSceneName);
         }
 
     }

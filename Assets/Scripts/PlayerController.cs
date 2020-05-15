@@ -44,12 +44,12 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKey("up"))
         {
-            transform.Translate(Vector3.right * Time.deltaTime * movementSpeed);
+            transform.Translate(Vector3.left * Time.deltaTime * movementSpeed);
         }
 
         if (Input.GetKey("down"))
         {
-            transform.Translate(Vector3.left * Time.deltaTime * movementSpeed);
+            transform.Translate(Vector3.right * Time.deltaTime * movementSpeed);
         }
 
         //playerAudio.PlayOneShot(runSound, 1.0f);

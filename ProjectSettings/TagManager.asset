@@ -9,6 +9,8 @@ TagManager:
   - Ground
   - Powerup
   - Powerup Indicator
+  - Street
+  - Next Level
   layers:
   - Default
   - TransparentFX
