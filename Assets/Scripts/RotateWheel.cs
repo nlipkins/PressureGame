@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RotateWheel : MonoBehaviour
 {
-    private float wheelSpeed = 20;
+    [SerializeField] private float wheelSpeed = 20;
 
     private PlayerController pcs;
 
