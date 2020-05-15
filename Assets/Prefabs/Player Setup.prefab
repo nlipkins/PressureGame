@@ -426,7 +426,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9b8d8ffbe3e7e14280335de3466b7e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 3
   nextSceneName: 
 --- !u!1 &290537345007145690
 GameObject:
@@ -5108,7 +5108,7 @@ MonoBehaviour:
   crashSound: {fileID: 8300000, guid: 913d6445ee8cc4152a9c18da590ee203, type: 3}
   runSound: {fileID: 0}
   movementSpeed: 6.85
-  jumpHeight: 7
+  jumpHeight: 3
   gravityModiifer: 1
   isOnGround: 1
   gameOver: 0
