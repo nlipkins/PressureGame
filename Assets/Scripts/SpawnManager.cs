@@ -23,7 +23,7 @@ public class SpawnManager : MonoBehaviour
     {
         InvokeRepeating("SpawnBarrels", 2, 2.7f);
 
-        InvokeRepeating("SpawnVehicles", 10.5f, 9.5f);
+        InvokeRepeating("SpawnVehicles", 11f, 9.5f);
 
         InvokeRepeating("SpawnMilitary", 35, 11.275f);
 
