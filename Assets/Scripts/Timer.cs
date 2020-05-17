@@ -23,7 +23,7 @@ public class Timer : MonoBehaviour
     {
         if (pcs.gameOver == false)
         {
-            gameTimer += Time.deltaTime * 300;
+            gameTimer += Time.deltaTime * 30;
 
             int seconds = (int)(gameTimer % 60);
             int minutes = (int)(gameTimer / 60) % 60;

@@ -27,9 +27,9 @@ public class SpawnManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("SpawnBarrels", 2f, spawnTime1);
+        InvokeRepeating("SpawnBarrels", 1f, spawnTime1);
 
-        InvokeRepeating("SpawnVehicles", 11f, spawnTime2);
+        InvokeRepeating("SpawnVehicles", 3f, spawnTime2);
 
         playerControllerScript = GameObject.Find("Player").GetComponent<PlayerController>();
     }

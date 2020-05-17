@@ -195,6 +195,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 5975001}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5975003 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7556110986767868604, guid: b8482e424f8307f458b589620bc66450,
+    type: 3}
+  m_PrefabInstance: {fileID: 5975001}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &20303895 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6348409353590077700, guid: f8532a5fa7a9ac84bb3ed76be991ed25,
@@ -2662,10 +2668,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   barrelPrefab:
-  - {fileID: 7556110986767868604, guid: b8482e424f8307f458b589620bc66450, type: 3}
-  - {fileID: 2849986250772246844, guid: 6cdc98b32d97b2746bd8ae093afa4f4a, type: 3}
+  - {fileID: 5975003}
+  - {fileID: 1563071582}
   carPrefab:
-  - {fileID: 973461866829792176, guid: 9f4424496b5f500489cf5813a2f92496, type: 3}
+  - {fileID: 1318520861}
   spawnTime1: 1.5
   spawnTime2: 8
 --- !u!1 &705507993
@@ -4381,6 +4387,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1318520859}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1318520861 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 973461866829792176, guid: 9f4424496b5f500489cf5813a2f92496,
+    type: 3}
+  m_PrefabInstance: {fileID: 1318520859}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1341990988
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5041,6 +5053,12 @@ PrefabInstance:
 --- !u!4 &1563071581 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2849986250771889744, guid: 6cdc98b32d97b2746bd8ae093afa4f4a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1563071580}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1563071582 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2849986250772246844, guid: 6cdc98b32d97b2746bd8ae093afa4f4a,
     type: 3}
   m_PrefabInstance: {fileID: 1563071580}
   m_PrefabAsset: {fileID: 0}
@@ -5981,6 +5999,56 @@ PrefabInstance:
       propertyPath: speed
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 7862403718994161098, guid: d02497f0d47ffea48850e29b6fcfc2d0,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.9400024
+      objectReference: {fileID: 0}
+    - target: {fileID: 7862403718994161098, guid: d02497f0d47ffea48850e29b6fcfc2d0,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 6.9700003
+      objectReference: {fileID: 0}
+    - target: {fileID: 7862403718994161098, guid: d02497f0d47ffea48850e29b6fcfc2d0,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 8652470926756955240, guid: d02497f0d47ffea48850e29b6fcfc2d0,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.4499989
+      objectReference: {fileID: 0}
+    - target: {fileID: 8652470926756955240, guid: d02497f0d47ffea48850e29b6fcfc2d0,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 6.9900007
+      objectReference: {fileID: 0}
+    - target: {fileID: 8652470926756955240, guid: d02497f0d47ffea48850e29b6fcfc2d0,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -6.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 8652470927412888769, guid: d02497f0d47ffea48850e29b6fcfc2d0,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8652470927412888769, guid: d02497f0d47ffea48850e29b6fcfc2d0,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8652470927412888769, guid: d02497f0d47ffea48850e29b6fcfc2d0,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8652470928289248525, guid: d02497f0d47ffea48850e29b6fcfc2d0,
+        type: 3}
+      propertyPath: gameTimerText
+      value: 
+      objectReference: {fileID: 178608411}
     - target: {fileID: 8652470928406941722, guid: d02497f0d47ffea48850e29b6fcfc2d0,
         type: 3}
       propertyPath: m_LocalPosition.x

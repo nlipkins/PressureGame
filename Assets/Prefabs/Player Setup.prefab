@@ -5112,7 +5112,7 @@ MonoBehaviour:
   crashSound: {fileID: 8300000, guid: 913d6445ee8cc4152a9c18da590ee203, type: 3}
   runSound: {fileID: 0}
   movementSpeed: 6.85
-  jumpHeight: 3
+  jumpHeight: 7
   gravityModiifer: 1
   isOnGround: 1
   gameOver: 0
