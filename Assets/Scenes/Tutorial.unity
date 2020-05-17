@@ -3842,9 +3842,9 @@ MonoBehaviour:
   - {fileID: 920924715}
   - {fileID: 1735234526}
   carPrefab:
-  - {fileID: 0}
-  militaryPrefab:
-  - {fileID: 0}
+  - {fileID: 973461866829792176, guid: 9f4424496b5f500489cf5813a2f92496, type: 3}
+  spawnTime1: 2.7
+  spawnTime2: 9.5
 --- !u!4 &699527366 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4558070733231408, guid: a9da80f587bbf9046aefc4a4cfb8a7fc,

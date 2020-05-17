@@ -7,7 +7,7 @@ public class SpawnManager : MonoBehaviour
 
     public GameObject[] barrelPrefab;
     public GameObject[] carPrefab;
-    public GameObject[] militaryPrefab;
+    //public GameObject[] militaryPrefab;
 
     private PlayerController playerControllerScript;
 
@@ -17,15 +17,19 @@ public class SpawnManager : MonoBehaviour
     private float spawnPosZ2 = 0.8f;
     private float spawnPosX = 40;
 
+    //[SerializeField] private float firstSpawn1;
+    [SerializeField] private float spawnTime1;
+
+    //[SerializeField] private float firstSpawn2;
+    [SerializeField] private float spawnTime2;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("SpawnBarrels", 2, 2.7f);
+        InvokeRepeating("SpawnBarrels", 2f, spawnTime1);
 
-        InvokeRepeating("SpawnVehicles", 11f, 9.5f);
-
-        InvokeRepeating("SpawnMilitary", 35, 11.275f);
+        InvokeRepeating("SpawnVehicles", 11f, spawnTime2);
 
         playerControllerScript = GameObject.Find("Player").GetComponent<PlayerController>();
     }
@@ -58,14 +62,4 @@ public class SpawnManager : MonoBehaviour
         }
     }
 
-    void SpawnMilitary()
-    {
-        int militaryIndex = Random.Range(0, militaryPrefab.Length);
-        spawnPosition = new Vector3(spawnPosX, 0, Random.Range(-spawnPosZ1, spawnPosZ2));
-
-        if (playerControllerScript.gameOver == false)
-        {
-            Instantiate(militaryPrefab[militaryIndex], spawnPosition, militaryPrefab[militaryIndex].transform.rotation);
-        }
-    }
 }

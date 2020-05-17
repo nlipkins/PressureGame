@@ -7725,8 +7725,8 @@ MonoBehaviour:
   - {fileID: 1435221249}
   carPrefab:
   - {fileID: 1936529502}
-  militaryPrefab:
-  - {fileID: 1945371934}
+  spawnTime1: 2.7
+  spawnTime2: 9.5
 --- !u!4 &699527366 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4558070733231408, guid: a9da80f587bbf9046aefc4a4cfb8a7fc,
@@ -19356,6 +19356,16 @@ PrefabInstance:
       propertyPath: militaryPrefab.Array.data[0]
       value: 
       objectReference: {fileID: 1945371934}
+    - target: {fileID: 3111148437913668497, guid: 3002affa5e3f6164f95aa90f0f488541,
+        type: 3}
+      propertyPath: spawnTime1
+      value: 2.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3111148437913668497, guid: 3002affa5e3f6164f95aa90f0f488541,
+        type: 3}
+      propertyPath: spawnTime2
+      value: 9.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3111148437913668502, guid: 3002affa5e3f6164f95aa90f0f488541,
         type: 3}
       propertyPath: m_LocalPosition.x
