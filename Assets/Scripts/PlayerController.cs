@@ -1,10 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
+    PlayerController controls;
+
 
     private Rigidbody playerRb;
     private Animator playerAni;
@@ -54,6 +57,28 @@ public class PlayerController : MonoBehaviour
 
         //playerAudio.PlayOneShot(runSound, 1.0f);
         StayInbounds();
+    }
+
+    void FixedUpdate()
+    {
+        //allowing the space bar to used to allow the player to jump
+        if (Input.GetKeyDown(KeyCode.Space) && isOnGround)
+        {
+            playerRb.AddForce(Vector3.up * jumpHeight, ForceMode.Impulse);
+            playerAni.SetTrigger("Jump_trig");
+            isOnGround = false;
+            playerAudio.PlayOneShot(jumpSound, 1.0f);
+        }
+
+        if (Input.GetKey("up"))
+        {
+            transform.Translate(Vector3.left * Time.deltaTime * movementSpeed);
+        }
+
+        if (Input.GetKey("down"))
+        {
+            transform.Translate(Vector3.right * Time.deltaTime * movementSpeed);
+        }
     }
 
     private void OnCollisionEnter (Collision collision)
